@@ -34,17 +34,20 @@ void main(){
   runApp(const MyApp());
 }
 
-// types of Widgets :
-// 1. Stateless Widget
-// 2. Stateful Widget
+/*
 
-// State
+types of Widgets :
+1. Stateless Widget
+2. Stateful Widget
 
-// 1. Material Design
-// 2. Cupertino Design
+State
 
-// every Widget has a BuildContext and this is used to find the location of a widget in a widgetTree
+1. Material Design
+2. Cupertino Design
 
+every Widget has a BuildContext and this is used to find the location of a widget in a widgetTree
+
+*/
 
 
 class MyApp extends StatelessWidget{
