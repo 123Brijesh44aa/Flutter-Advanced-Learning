@@ -24,6 +24,34 @@ class _BlubOnOff extends State<BlubOnOff> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const SizedBox(
+                  width: 10,
+                ),
+                CircleAvatar(
+                  radius: 30,
+                  child: Image.network(
+                      "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png",),
+                ),
+                const Flexible(
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                      "Get The Code \n\n https://github.com/123Brijesh44aa/Flutter-Advanced-Learning",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                )
+              ],
+            ),
+            const SizedBox(
+              height: 100,
+            ),
             Padding(
               padding: const EdgeInsets.all(8),
               child: Icon(
@@ -33,8 +61,9 @@ class _BlubOnOff extends State<BlubOnOff> {
                       color: Colors.yellow.shade700.withOpacity(1),
                       spreadRadius: _lightIsOn ? 60 : 0,
                       blurRadius: _lightIsOn ? 100 : 0,
-                      offset: _lightIsOn ? const Offset(0, -10) : const Offset(0, -4)
-                  )
+                      offset: _lightIsOn
+                          ? const Offset(0, -10)
+                          : const Offset(0, -4))
                 ],
                 color: _lightIsOn ? Colors.yellow.shade700 : Colors.white,
                 size: 230,
